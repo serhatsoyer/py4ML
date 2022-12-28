@@ -1,2 +1,3 @@
 *.ipynb linguist-language=Python
-examples/*.ipynb linguist-detectable=true
+examples/* linguist-detectable=true
+examples/*.py linguist-vendored=false
