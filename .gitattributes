@@ -1,5 +1,2 @@
 *.ipynb linguist-language=Python
-*.py linguist-detectable=true
-*.ipynb linguist-detectable=true
-*.py linguist-vendored=false
-*.ipynb linguist-vendored=false
+examples/*.ipynb linguist-detectable=true
