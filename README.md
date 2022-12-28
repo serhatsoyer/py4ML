@@ -106,12 +106,17 @@
     - Have seperate test model to have a batch size of 1
 
 ### To Do List
-- Solve the problem in [/examples/time_series/cases/16.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/16.ipynb). Why the network cannot learn the inter-window relations? The reason might be related to the formation of batches. Try to use [dataset = tf.data.Dataset.from_tensor_slices(input)](https://keras.io)
-- Study and implement attention mechanism as a part of [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp)
-- Convert the first GRU layer into a bidirectional layer in [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp). The loss drops a lot but the network produces complete thrash. Try to figure out why
-- Study and demonstrate autoencoder basics
+- [a simple autoencoder based on a fully-connected layer](https://blog.keras.io/building-autoencoders-in-keras.html)
+- [a sparse autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
+- [a deep fully-connected autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
+- [a deep convolutional autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
+- [an image denoising model](https://blog.keras.io/building-autoencoders-in-keras.html)
+- [a sequence-to-sequence autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
+- [a variational autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
 - Study and demonstrate GAN basics
-- Study PyTorch
+- Study and implement attention mechanism as a part of [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp)
+- Solve the problem in [/examples/time_series/cases/16.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/16.ipynb). Why the network cannot learn the inter-window relations? The reason might be related to the formation of batches. Try to use [dataset = tf.data.Dataset.from_tensor_slices(input)](https://keras.io)
+- Convert the first GRU layer into a bidirectional layer in [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp). The loss drops a lot but the network produces complete thrash. Try to figure out why
 
 ### My Other Study Repos
 - [py4DSP: DSP code in Python](https://github.com/serhatsoyer/py4DSP)
