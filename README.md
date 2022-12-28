@@ -1,5 +1,5 @@
 ## py4ML
-*ML code in Python*
+*ML (Machine Learning) code in Python*
 
 ### Intro
 - This repo is for my personal study of some ML (machine learning) conceps and to study sklearn and tensorflow (keras) libraries
@@ -17,7 +17,7 @@
     - Write complex equations in markdown cells
     - Multi-dimensional [*numpy*](https://numpy.org) array operations
     - Random number generation, saving, and various other [*numpy*](https://numpy.org) functions
-    - *sns.pairplot* in [*seaborn*](https://seaborn.pydata.org)
+    - [*sns.pairplot*](https://seaborn.pydata.org/generated/seaborn.pairplot.html) in [*seaborn*](https://seaborn.pydata.org)
 - [/examples/time_series/cases](https://github.com/serhatsoyer/py4ML/tree/main/examples/time_series/cases)
     - [1: None](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/1.ipynb) *compare with [2: Within](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/2.ipynb) and [12: Inter](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/12.ipynb)*
     - [2: Within](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/2.ipynb) *compare with [1: None](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/1.ipynb) and [12: Inter](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/12.ipynb)*
@@ -37,72 +37,72 @@
     - [16: Large Dataset](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/16.ipynb) *compare with [15: Small](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/15.ipynb)*
     - [17: Dense Not Shuffled](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/17.ipynb) *compare with [2: LSTM Shuffled](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/2.ipynb), [3: Dense Shuffled](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/3.ipynb), and [7: LSTM Not Shuffled](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/7.ipynb)*
 - [/examples/time_series/functions.py](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/functions.py)
-    - Splitting dataset into training, validation, and test sets using [from sklearn.model_selection import train_test_split](https://scikit-learn.org/stable/)
-    - Regression performance metrics using [from sklearn.metrics import mean_squared_error, mean_absolute_error](https://scikit-learn.org/stable/)
-    - Sequential models in Keras using [from keras.models import Sequential](https://keras.io)
-    - Saving and loading Keras models using [from keras.models import load_model](https://keras.io)
-    - Following ANN layers: [from keras.layers import Input, Flatten, LSTM, Dropout, Dense](https://keras.io)
-    - Early stopping the training using [from keras.callbacks import EarlyStopping](https://keras.io)
-    - Customized callback creation and usage [from keras.callbacks import Callback](https://keras.io)
-    - *sns.regplot* in [*seaborn*](https://seaborn.pydata.org)
-    - *sns.histplot* in [*seaborn*](https://seaborn.pydata.org)
+    - Splitting dataset into training, validation, and test sets using [from sklearn.model_selection import train_test_split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
+    - Regression performance metrics using [from sklearn.metrics import mean_squared_error, mean_absolute_error](https://scikit-learn.org/stable/modules/model_evaluation.html)
+    - Sequential models in Keras using [from keras.models import Sequential](https://keras.io/api/models/)
+    - Saving and loading Keras models using [from keras.models import load_model](https://keras.io/api/models/)
+    - Following ANN layers: [from keras.layers import Input, Flatten, LSTM, Dropout, Dense](https://keras.io/api/layers/)
+    - Early stopping the training using [from keras.callbacks import EarlyStopping](https://keras.io/api/callbacks/)
+    - Customized callback creation and usage [from keras.callbacks import Callback](https://keras.io/api/callbacks/)
+    - [*sns.regplot*](https://seaborn.pydata.org/generated/seaborn.regplot.html) in [*seaborn*](https://seaborn.pydata.org)
+    - [*sns.histplot*](https://seaborn.pydata.org/generated/seaborn.histplot.html) in [*seaborn*](https://seaborn.pydata.org)
     - Drawing learning curves using [*pandas*](https://pandas.pydata.org) and [*matplotlib*](https://matplotlib.org)
 - [/examples/time_series/misc.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/misc.ipynb)
     - Python *from enum import Enum* usage
-    - Classification performance metrics using [from sklearn.metrics import classification_report, confusion_matrix](https://scikit-learn.org/stable/)
-    - Multi-class classification using [from keras.utils import np_utils](https://keras.io)
-    - Custom loss function and custom metric definition using [from keras import backend as ker](https://keras.io)
-    - Following ANN layers: [from keras.layers import Conv1D, MaxPooling1D, concatenate, BatchNormalization, Bidirectional](https://keras.io)
-    - Functional API in Keras used with [from keras.models import Model](https://keras.io)
+    - Classification performance metrics using [from sklearn.metrics import classification_report, confusion_matrix](https://scikit-learn.org/stable/modules/model_evaluation.html)
+    - Multi-class classification using [from keras.utils import np_utils](https://keras.io/api/utils/)
+    - Custom loss function and custom metric definition using [from keras import backend as ker](https://keras.io/api/utils/backend_utils/)
+    - Following ANN layers: [from keras.layers import Conv1D, MaxPooling1D, concatenate, BatchNormalization, Bidirectional](https://keras.io/api/layers/)
+    - Functional API in Keras used with [from keras.models import Model](https://keras.io/api/models/)
     - Deleting Python variables with *del variable*
-    - [percentiles = np.percentile(y_train_temp_1, [25, 50, 75])](https://numpy.org)
+    - [percentiles = np.percentile(y_train_temp_1, [25, 50, 75])](https://numpy.org/doc/stable/reference/generated/numpy.percentile.html)
     - Regression - Binary classification - Multi-class classification differences
     - Getting input-output information about an intermediate later
 - [/examples/toy_datasets.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/toy_datasets.ipynb)
-    - [seaborn toy datasets](https://seaborn.pydata.org)
-    - [scikit-learn toy datasets](https://scikit-learn.org/stable/)
-    - A multi-class classification dataset [from sklearn.datasets import load_iris](https://scikit-learn.org/stable/) and [*seaborn*](https://seaborn.pydata.org)
+    - [seaborn toy datasets](https://seaborn.pydata.org/generated/seaborn.load_dataset.html)
+    - [scikit-learn toy datasets](https://scikit-learn.org/stable/datasets/toy_dataset.html)
+    - A multi-class classification dataset [from sklearn.datasets import load_iris](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html#sklearn.datasets.load_iris) and [*seaborn*](https://github.com/mwaskom/seaborn-data)
     - Usage of *help* function in Python
 - [/examples/datasets_misc.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/datasets_misc.ipynb)
-    - Creating a simulated dataset easily with [from sklearn.datasets import make_blobs](https://scikit-learn.org/stable/)
-    - Scaling input data using [from sklearn.preprocessing import MinMaxScaler, StandardScaler](https://scikit-learn.org/stable/)
-    - Shuffle a dataset using [from sklearn.utils import shuffle](https://scikit-learn.org/stable/)
+    - Creating a simulated dataset easily with [from sklearn.datasets import make_blobs](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_blobs.html)
+    - Scaling input data using [from sklearn.preprocessing import MinMaxScaler, StandardScaler](https://scikit-learn.org/stable/modules/preprocessing.html)
+    - Shuffle a dataset using [from sklearn.utils import shuffle](https://scikit-learn.org/stable/modules/generated/sklearn.utils.shuffle.html)
 - [/examples/shallow/random_forests.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/shallow/random_forests.ipynb)
-    - Usage of a shallow model with [from sklearn.ensemble import RandomForestClassifier](https://scikit-learn.org/stable/)
+    - Usage of a shallow model with [from sklearn.ensemble import RandomForestClassifier](https://scikit-learn.org/stable/modules/ensemble.html)
     - Calling *iris.info()*, *iris.head()*, *iris.tail()* methods in [*pandas*](https://pandas.pydata.org)
 - [/examples/shallow/pca_and_svm.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/shallow/pca_and_svm.ipynb)
-    - Dimensionality reduction using [from sklearn.decomposition import PCA](https://scikit-learn.org/stable/)
-    - SVM models with [from sklearn.svm import SVC](https://scikit-learn.org/stable/)
+    - Dimensionality reduction using [from sklearn.decomposition import PCA](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html)
+    - SVM models with [from sklearn.svm import SVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html)
 - [/examples/shallow/grid_search_and_knn.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/shallow/grid_search_and_knn.ipynb)
-    - KNN classifier with [from sklearn.neighbors import KNeighborsClassifier](https://scikit-learn.org/stable/)
-    - Model parameter optimization with [from sklearn.model_selection import GridSearchCV](https://scikit-learn.org/stable/)
-    - A binary classification dataset [from sklearn.datasets import load_breast_cancer](https://scikit-learn.org/stable/)
+    - KNN classifier with [from sklearn.neighbors import KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
+    - Model parameter optimization with [from sklearn.model_selection import GridSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html#sklearn.model_selection.GridSearchCV)
+    - A binary classification dataset [from sklearn.datasets import load_breast_cancer](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html)
 - [/examples/tensorboard.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/tensorboard.ipynb)
-    - A regression dataset [from sklearn.datasets import load_diabetes](https://scikit-learn.org/stable/)
+    - A regression dataset [from sklearn.datasets import load_diabetes](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html)
     - Current date and time with *from datetime import datetime*
-    - Obtain network insight with [from keras.callbacks import TensorBoard](https://keras.io)
+    - Obtain network insight with [from keras.callbacks import TensorBoard](https://keras.io/api/callbacks/)
 - [/examples/keras_applications/resnet50.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/keras_applications/resnet50.ipynb)
-    - Download and use *ResNet50* model with [from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input, decode_predictions](https://keras.io)
-    - Preprocess any image to feed to *ResNet50* with [from tensorflow.keras.preprocessing.image import load_img, img_to_array](https://keras.io)
+    - Download and use *ResNet50* model with [from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input, decode_predictions](https://www.tensorflow.org/api_docs/python/tf/keras/applications)
+    - Preprocess any image to feed to *ResNet50* with [from tensorflow.keras.preprocessing.image import load_img, img_to_array](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image)
 - [/examples/keras_applications/intermediate_layers.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/keras_applications/intermediate_layers.ipynb)
-    - Download and use *MobileNetV2* model with [from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_input, decode_predictions](https://keras.io)
+    - Download and use *MobileNetV2* model with [from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_input, decode_predictions](https://www.tensorflow.org/api_docs/python/tf/keras/applications)
     - Reach intermediate layer input-output information of a pre-trained model
 - [/main/examples/keras_applications/transfer_learning.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/keras_applications/transfer_learning.ipynb)
-    - Download and use *InceptionV3* model with [from keras.applications.inception_v3 import InceptionV3, preprocess_input](https://keras.io)
-    - Augment an image dataset with [from tensorflow.keras.preprocessing.image import ImageDataGenerator](https://keras.io)
-    - Clone a model with [from keras.models import clone_model](https://keras.io)
+    - Download and use *InceptionV3* model with [from keras.applications.inception_v3 import InceptionV3, preprocess_input](https://www.tensorflow.org/api_docs/python/tf/keras/applications)
+    - Augment an image dataset with [from tensorflow.keras.preprocessing.image import ImageDataGenerator](https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image)
+    - Clone a model with [from keras.models import clone_model](https://keras.io/api/models/)
     - Display an image in the middle of a cell with *from IPython.display import Image, display*
-    - Splitting dataset into training and test sets using [from sklearn.model_selection import train_test_split](https://scikit-learn.org/stable/)
-    - Following ANN layer: [from keras.layers import GlobalAveragePooling2D](https://keras.io)
-    - Control the optimization algorithm with [from keras.optimizers import SGD](https://keras.io)
+    - Splitting dataset into training and test sets using [from sklearn.model_selection import train_test_split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
+    - Following ANN layer: [from keras.layers import GlobalAveragePooling2D](https://keras.io/api/layers/)
+    - Control the optimization algorithm with [from keras.optimizers import SGD](https://keras.io/api/optimizers/)
     - Transfer learning by stacking additional layers on top of the existing pre-trained model
     - Fine tuning the tip of the existing model by playing with *layer.trainable*
 - [/examples/nlp/intro.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/nlp/intro.ipynb)
     - Sequence to sequence model from scratch
-    - Following ANN layers: [from keras.layers import Embedding, GRU](https://keras.io)
-    - NLP loss function [from keras.losses import sparse_categorical_crossentropy](https://keras.io)
+    - Following ANN layers: [from keras.layers import Embedding, GRU](https://keras.io/api/layers/)
+    - NLP loss function [from keras.losses import sparse_categorical_crossentropy](https://keras.io/api/losses/)
     - String processing to simplfy the learning task
-    - Training-testing split using [dataset = tf.data.Dataset.from_tensor_slices(encoded)](https://keras.io)
+    - Training-testing split using [dataset = tf.data.Dataset.from_tensor_slices(encoded)](https://www.tensorflow.org/api_docs/python/tf/data/Dataset)
     - Have seperate test model to have a batch size of 1
 
 ### To Do List
@@ -111,10 +111,11 @@
 - Convert the first GRU layer into a bidirectional layer in [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp). The loss drops a lot but the network produces complete thrash. Try to figure out why
 - Study and demonstrate autoencoder basics
 - Study and demonstrate GAN basics
+- Study PyTorch
 
 ### My Other Study Repos
-- [py4DSP: DSP code on Python](https://github.com/serhatsoyer/py4DSP)
-- [py4Nav: Navigation code on Python](https://github.com/serhatsoyer/py4Nav)
-- [py4Me: Daily code on Python](https://github.com/serhatsoyer/py4Me)
+- [py4DSP: DSP code in Python](https://github.com/serhatsoyer/py4DSP)
+- [py4Nav: Navigation code in Python](https://github.com/serhatsoyer/py4Nav)
+- [py4Me: Daily code in Python](https://github.com/serhatsoyer/py4Me)
 
 Written by [*serhatsoyer*](https://github.com/serhatsoyer)
