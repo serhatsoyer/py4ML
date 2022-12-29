@@ -104,9 +104,12 @@
     - String processing to simplfy the learning task
     - Training-testing split using [dataset = tf.data.Dataset.from_tensor_slices(encoded)](https://www.tensorflow.org/api_docs/python/tf/data/Dataset)
     - Have seperate test model to have a batch size of 1
+- [/examples/autoencoders/intro.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/autoencoders/intro.ipynb)
+    - Intro to [MNIST dataset](https://keras.io/api/datasets/)
+    - What autoencoders are useful for: denoising and dimensionality reduction for visualization
+    - What autoencoders are 'NOT' useful for: unsupervised learning of useful representations without the need for labels
 
 ### To Do List
-- [a simple autoencoder based on a fully-connected layer](https://blog.keras.io/building-autoencoders-in-keras.html)
 - [a sparse autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
 - [a deep fully-connected autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
 - [a deep convolutional autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
