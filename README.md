@@ -57,7 +57,7 @@
     - Deleting Python variables with *del variable*
     - [percentiles = np.percentile(y_train_temp_1, [25, 50, 75])](https://numpy.org/doc/stable/reference/generated/numpy.percentile.html)
     - Regression - Binary classification - Multi-class classification differences
-    - Getting input-output information about an intermediate later
+    - Getting input-output information about an intermediate layer
 - [/examples/toy_datasets.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/toy_datasets.ipynb)
     - [seaborn toy datasets](https://seaborn.pydata.org/generated/seaborn.load_dataset.html)
     - [scikit-learn toy datasets](https://scikit-learn.org/stable/datasets/toy_dataset.html)
@@ -111,11 +111,10 @@
 - [/examples/autoencoders/sparse.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/autoencoders/sparse.ipynb)
     - Use of regularization with [from keras import regularizers](https://keras.io/api/layers/regularizers/)
     - Effect of *L1* regularizer
+- [/examples/autoencoders/convnet.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/autoencoders/convnet.ipynb)
+    - Following ANN layers: [Conv2D, MaxPooling2D, UpSampling2D](https://keras.io/api/layers/)
 
 ### To Do List
-- [a sparse autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
-- [a deep fully-connected autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
-- [a deep convolutional autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
 - [an image denoising model](https://blog.keras.io/building-autoencoders-in-keras.html)
 - [a sequence-to-sequence autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
 - [a variational autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
