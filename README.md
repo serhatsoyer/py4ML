@@ -107,7 +107,10 @@
 - [/examples/autoencoders/intro.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/autoencoders/intro.ipynb)
     - Intro to [MNIST dataset](https://keras.io/api/datasets/)
     - What autoencoders are useful for: denoising and dimensionality reduction for visualization
-    - What autoencoders are 'NOT' useful for: unsupervised learning of useful representations without the need for labels
+    - What autoencoders are *NOT* useful for: unsupervised learning of useful representations without the need for labels
+- [/examples/autoencoders/sparse.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/autoencoders/sparse.ipynb)
+    - Use of regularization with [from keras import regularizers](https://keras.io/api/layers/regularizers/)
+    - Effect of *L1* regularizer
 
 ### To Do List
 - [a sparse autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
