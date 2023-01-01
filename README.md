@@ -113,9 +113,10 @@
     - Effect of *L1* regularizer
 - [/examples/autoencoders/convnet.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/autoencoders/convnet.ipynb)
     - Following ANN layers: [Conv2D, MaxPooling2D, UpSampling2D](https://keras.io/api/layers/)
+- [/examples/autoencoders/denoising.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/autoencoders/denoising.ipynb)
+    - Denoising an image using autoencoders
 
 ### To Do List
-- [an image denoising model](https://blog.keras.io/building-autoencoders-in-keras.html)
 - [a sequence-to-sequence autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
 - [a variational autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
 - Study and demonstrate GAN basics
