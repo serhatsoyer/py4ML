@@ -126,6 +126,7 @@
 - Study and implement attention mechanism as a part of [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp)
 - Solve the problem in [/examples/time_series/cases/16.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/16.ipynb). Why the network cannot learn the inter-window relations? The reason might be related to the formation of batches. Try to use [dataset = tf.data.Dataset.from_tensor_slices(input)](https://keras.io)
 - Convert the first GRU layer into a bidirectional layer in [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp). The loss drops a lot but the network produces complete thrash. Try to figure out why
+- [Reconstruction LSTM Autoencoder](https://machinelearningmastery.com/lstm-autoencoders/). [Sequence-to-sequence autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html) part may help as well. I can try it on [/examples/time_series/](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/). I may further enhance it with a vae version. I may try [Prediction LSTM Autoencoder](https://machinelearningmastery.com/lstm-autoencoders/). I may try to predict labels using the pre-trained encoder with [/examples/time_series/](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/)
 
 ### My Other Study Repos
 - [py4DSP: DSP code in Python](https://github.com/serhatsoyer/py4DSP)
