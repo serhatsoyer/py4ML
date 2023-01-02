@@ -115,10 +115,13 @@
     - Following ANN layers: [Conv2D, MaxPooling2D, UpSampling2D](https://keras.io/api/layers/)
 - [/examples/autoencoders/denoising.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/autoencoders/denoising.ipynb)
     - Denoising an image using autoencoders
+- [/examples/autoencoders/vae.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/autoencoders/vae.ipynb)
+    - Variational autoencoders
+    - Following ANN layer: [Lambda](https://keras.io/api/layers/)
+    - [*add_loss*](https://keras.io/api/losses/) function of a [from keras.models import Model](https://keras.io/api/models/)
+    - Dimensionality reduction for data visualization (in 2D)
 
 ### To Do List
-- [a sequence-to-sequence autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
-- [a variational autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)
 - Study and demonstrate GAN basics
 - Study and implement attention mechanism as a part of [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp)
 - Solve the problem in [/examples/time_series/cases/16.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/16.ipynb). Why the network cannot learn the inter-window relations? The reason might be related to the formation of batches. Try to use [dataset = tf.data.Dataset.from_tensor_slices(input)](https://keras.io)
