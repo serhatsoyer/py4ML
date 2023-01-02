@@ -122,11 +122,12 @@
     - Dimensionality reduction for data visualization (in 2D)
 
 ### To Do List
-- Study and demonstrate GAN basics
+- Study and demonstrate GAN basics: [GAN section of Tensorflow Udemy Course from Jose Portilla - Pierian Training](https://www.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/)
 - Study and implement attention mechanism as a part of [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp)
 - Solve the problem in [/examples/time_series/cases/16.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/16.ipynb). Why the network cannot learn the inter-window relations? The reason might be related to the formation of batches. Try to use [dataset = tf.data.Dataset.from_tensor_slices(input)](https://keras.io)
 - Convert the first GRU layer into a bidirectional layer in [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp). The loss drops a lot but the network produces complete thrash. Try to figure out why
 - Implement [reconstruction LSTM autoencoder](https://machinelearningmastery.com/lstm-autoencoders/). The [sequence-to-sequence autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html) part of that blog post may help. I can try these on [/examples/time_series/](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/). I may further enhance it with a *vae* version. I may try to implement [prediction LSTM autoencoder](https://machinelearningmastery.com/lstm-autoencoders/). I may try to predict labels using the pre-trained encoder with [/examples/time_series/](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/)
+- Study and demonstrate [working on AWS](https://blog.keras.io/running-jupyter-notebooks-on-gpu-on-aws-a-starter-guide.html) basics
 
 ### My Other Study Repos
 - [py4DSP: DSP code in Python](https://github.com/serhatsoyer/py4DSP)
