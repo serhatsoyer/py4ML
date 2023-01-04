@@ -125,17 +125,17 @@
     - Training with a for loop instead of [keras.model.fit](https://www.tensorflow.org/api_docs/python/tf/keras/Model#fit)
     - Two phase training by varying [*trainable*](https://keras.io/guides/transfer_learning/)
     - Generating fake digit images with GAN
+- [/examples/autoencoders/lstm.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/autoencoders/lstm.ipynb)
+    - Following ANN layers: [RepeatVector, TimeDistributed](https://keras.io/api/layers/)
+    - Sequence encoding
+    - Sequence prediction
 
 ### To Do List
-1. Implement [Reconstruction LSTM Autoencoder](https://machinelearningmastery.com/lstm-autoencoders/). Is there any difference compared to [Sequence-to-sequence autoencoder](https://blog.keras.io/building-autoencoders-in-keras.html)?
-2. Implement [Prediction LSTM Autoencoder](https://machinelearningmastery.com/lstm-autoencoders/)
-3. Implement [Composite LSTM Autoencoder](https://machinelearningmastery.com/lstm-autoencoders/)
-4. Implement [Keep Standalone LSTM Encoder](https://machinelearningmastery.com/lstm-autoencoders/)
-5. Train an [Reconstruction LSTM Autoencoder](https://machinelearningmastery.com/lstm-autoencoders/) on [/examples/time_series/](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/). Get rid of the decoder part after training. Introduce extra layers on top to do some classifications as in [/examples/time_series/misc.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/misc.ipynb)
-6. Study and implement attention mechanism as a part of [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp)
-7. Convert the first GRU layer into a bidirectional layer in [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp). The loss drops a lot but the network produces complete thrash. Try to figure out why
-8. Solve the problem in [/examples/time_series/cases/16.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/16.ipynb). Why the network cannot learn the inter-window relations? The reason might be related to the formation of batches. Try to use [dataset = tf.data.Dataset.from_tensor_slices(input)](https://keras.io)
-9. Study and demonstrate [working on AWS](https://blog.keras.io/running-jupyter-notebooks-on-gpu-on-aws-a-starter-guide.html) basics
+1. Train an [Reconstruction LSTM Autoencoder](https://machinelearningmastery.com/lstm-autoencoders/) on [/examples/time_series/](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/). Get rid of the decoder part after training. Introduce extra layers on top to do some classifications as in [/examples/time_series/misc.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/misc.ipynb)
+2. Study and implement attention mechanism as a part of [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp)
+3. Convert the first GRU layer into a bidirectional layer in [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp). The loss drops a lot but the network produces complete thrash. Try to figure out why
+4. Solve the problem in [/examples/time_series/cases/16.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/16.ipynb). Why the network cannot learn the inter-window relations? The reason might be related to the formation of batches. Try to use [dataset = tf.data.Dataset.from_tensor_slices(input)](https://keras.io)
+5. Study and demonstrate [working on AWS](https://blog.keras.io/running-jupyter-notebooks-on-gpu-on-aws-a-starter-guide.html) basics
 
 ### My Other Study Repos
 - [py4DSP: DSP code in Python](https://github.com/serhatsoyer/py4DSP)
