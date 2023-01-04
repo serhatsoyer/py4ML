@@ -129,13 +129,15 @@
     - Following ANN layers: [RepeatVector, TimeDistributed](https://keras.io/api/layers/)
     - Sequence encoding
     - Sequence prediction
+- [/examples/time_series/autoencoder.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/autoencoder.ipynb)
+    - [RootMeanSquaredError](https://keras.io/api/metrics/)
+    - GRU autoencoder feature extractor combined with a binary classification problem (underperformed compared to classical method)
 
 ### To Do List
-1. Train an [Reconstruction LSTM Autoencoder](https://machinelearningmastery.com/lstm-autoencoders/) on [/examples/time_series/](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/). Get rid of the decoder part after training. Introduce extra layers on top to do some classifications as in [/examples/time_series/misc.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/misc.ipynb)
-2. Study and implement attention mechanism as a part of [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp)
-3. Convert the first GRU layer into a bidirectional layer in [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp). The loss drops a lot but the network produces complete thrash. Try to figure out why
-4. Solve the problem in [/examples/time_series/cases/16.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/16.ipynb). Why the network cannot learn the inter-window relations? The reason might be related to the formation of batches. Try to use [dataset = tf.data.Dataset.from_tensor_slices(input)](https://keras.io)
-5. Study and demonstrate [working on AWS](https://blog.keras.io/running-jupyter-notebooks-on-gpu-on-aws-a-starter-guide.html) basics
+1. Study and implement attention mechanism as a part of [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp)
+2. Convert the first GRU layer into a bidirectional layer in [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp). The loss drops a lot but the network produces complete thrash. Try to figure out why
+3. Solve the problem in [/examples/time_series/cases/16.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/16.ipynb). Why the network cannot learn the inter-window relations? The reason might be related to the formation of batches. Try to use [dataset = tf.data.Dataset.from_tensor_slices(input)](https://keras.io)
+4. Study and demonstrate [working on AWS](https://blog.keras.io/running-jupyter-notebooks-on-gpu-on-aws-a-starter-guide.html) basics
 
 ### My Other Study Repos
 - [py4DSP: DSP code in Python](https://github.com/serhatsoyer/py4DSP)
