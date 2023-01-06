@@ -132,12 +132,14 @@
 - [/examples/time_series/autoencoder.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/autoencoder.ipynb)
     - [RootMeanSquaredError](https://keras.io/api/metrics/)
     - GRU autoencoder feature extractor combined with a binary classification problem (underperformed compared to classical method)
+- [/examples/nlp/bidirectional.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/nlp/bidirectional.ipynb)
+    - Wrong minima (loss drops significantly but the output seems to be thrash)
 
 ### To Do List
-1. Study and implement attention mechanism as a part of [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp)
-2. Convert the first GRU layer into a bidirectional layer in [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp). The loss drops a lot but the network produces complete thrash. Try to figure out why
+1. Study and implement attention mechanism as a part of [/examples/nlp](https://github.com/serhatsoyer/py4ML/tree/main/examples/nlp). [Source 1](https://machinelearningmastery.com/adding-a-custom-attention-layer-to-recurrent-neural-network-in-keras/), [Source 2](https://www.kaggle.com/code/rahulvks/lstm-attention-keras/notebook)
+2. Study and demonstrate [working on AWS](https://blog.keras.io/running-jupyter-notebooks-on-gpu-on-aws-a-starter-guide.html) basics
 3. Solve the problem in [/examples/time_series/cases/16.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/time_series/cases/16.ipynb). Why the network cannot learn the inter-window relations? The reason might be related to the formation of batches. Try to use [dataset = tf.data.Dataset.from_tensor_slices(input)](https://keras.io)
-4. Study and demonstrate [working on AWS](https://blog.keras.io/running-jupyter-notebooks-on-gpu-on-aws-a-starter-guide.html) basics
+4. Solve the problem in [/examples/nlp/bidirectional.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/nlp/bidirectional.ipynb). Why the bidirectional network performs worse than [/examples/nlp/intro.ipynb](https://github.com/serhatsoyer/py4ML/blob/main/examples/nlp/intro.ipynb)?
 
 ### My Other Study Repos
 - [py4DSP: DSP code in Python](https://github.com/serhatsoyer/py4DSP)
